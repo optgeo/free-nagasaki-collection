@@ -14,7 +14,7 @@ npx playwright screenshot --wait-for-timeout=#{wait} "#{url}" #{dst_path}
   EOS
   print "#{cmd}"
   w.print <<-EOS
-## #{fn}: #{cid}
+## [#{fn}](#{url})
 [![screenshot](#{dst_path})](#{url})
   EOS
   w.flush
