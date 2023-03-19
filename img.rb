@@ -4,7 +4,7 @@ w.print <<-EOS
 Source: https://opennagasaki.nerc.or.jp/
 EOS
 
-wait = 30 * 1000
+wait = 60 * 1000
 File.foreach('../free-nagasaki/convert/dst/list.csv') {|l|
   (fn, cid) = l.strip.split(',')
   dst_path = "img/#{fn.sub('copc.laz', 'jpg')}"
